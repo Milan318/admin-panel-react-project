@@ -9,6 +9,7 @@ const App = () => {
   const [productsData, setProductsData] = useState([]);
   const [godown, setGodown] = useState([]);
   const [editId, setEditId] = useState(-1);
+  const imgRef=useRef();
   const fileInputRef = useRef(null);
 
   const navigate = useNavigate();
@@ -66,6 +67,7 @@ const App = () => {
 
     setProduct({});
     setGodown([]);
+    imgRef.current.value='';
 
     navigate("/datatable");
   };
@@ -99,6 +101,7 @@ const App = () => {
               handleSubmit={handleSubmit}
               fileInputRef={fileInputRef}
               isEdit={editId !== -1}
+              imgRef={imgRef}
             />
           }
         />

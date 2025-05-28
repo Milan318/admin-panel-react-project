@@ -3,7 +3,7 @@ import "../assets/script";
 import Side from "../components/Side";
 import Header from "../components/Header";
 
-const Datatable = ({ productsData, handleDelete,handleEdit }) => {
+const Datatable = ({ productsData, handleDelete,handleEdit,imgRef}) => {
   return (
     <>
       <div className="wrapper">

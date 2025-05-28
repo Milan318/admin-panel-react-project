@@ -3,7 +3,7 @@ import React from "react";
 import Side from "../components/Side";
 import Header from "../components/Header";
 
-const Form = ({ handleChange, product, godown ,handleSubmit}) => {
+const Form = ({ handleChange, product, godown ,handleSubmit,imgRef}) => {
   return (
     <>
       <div className="wrapper">
@@ -112,7 +112,7 @@ const Form = ({ handleChange, product, godown ,handleSubmit}) => {
                                 onChange={handleChange}
                                 className="form-control"
                                 id="product_image"
-                                
+                                ref={imgRef}
                                 placeholder="Enter product image"
                               />
                             </div>
