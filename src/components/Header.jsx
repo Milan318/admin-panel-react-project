@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Navbar = () => {
+function Header() {
   return (
     <>
-      <div className="main-header">
+    <div className="main-header">
       <div className="main-header-logo">
         {/* Logo Header */}
         <div className="logo-header" data-background-color="dark">
@@ -285,8 +285,10 @@ const Navbar = () => {
       </nav>
       {/* End Navbar */}
     </div>
+
+      
     </>
   )
 }
 
-export default Navbar
+export default Header

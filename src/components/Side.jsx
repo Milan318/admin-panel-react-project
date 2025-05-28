@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const Sidebar = () => {
+function Side() {
   return (
     <>
-    {/* Sidebar */}
+      {/* Sidebar */}
   <div className="sidebar" data-background-color="dark">
     <div className="sidebar-logo">
       {/* Logo Header */}
@@ -66,12 +66,7 @@ const Sidebar = () => {
             <div className="collapse" id="tables">
               <ul className="nav nav-collapse">
                 <li>
-                  <Link to="tables/tables.html">
-                    <span className="sub-item">Basic Table</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="tables/datatables.html">
+                  <Link to="/datatable">
                     <span className="sub-item">Datatables</span>
                   </Link>
                 </li>
@@ -83,8 +78,10 @@ const Sidebar = () => {
     </div>
   </div>
   {/* End Sidebar */}
+
+      
     </>
   )
 }
 
-export default Sidebar
+export default Side

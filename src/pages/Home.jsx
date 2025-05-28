@@ -1,14 +1,15 @@
 import React from 'react'
-import Sidebar from '../components/Sidebar'
-import Navbar from '../components/Navbar'
+import Side from '../components/Side'
+import Header from '../components/Header'
+
 
 const Home = () => {
   return (
     <>
 <div className="wrapper">
-    <Sidebar/>
+    <Side/>
   <div className="main-panel">
-    <Navbar/>
+    <Header/>
     <div className="container">
       <div className="page-inner">
         <div className="d-flex align-items-left align-items-md-center flex-column flex-md-row pt-2 pb-4">
