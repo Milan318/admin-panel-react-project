@@ -1,5 +1,4 @@
 import React from "react";
-
 import "../assets/script";
 import Side from "../components/Side";
 import Header from "../components/Header";
