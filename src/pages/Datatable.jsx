@@ -1,9 +1,10 @@
 import React from "react";
+
 import "../assets/script";
 import Side from "../components/Side";
 import Header from "../components/Header";
 
-const Datatable = ({ productsData, handleDelete,handleEdit,imgRef}) => {
+const Datatable = ({ productsData, handleDelete,handleEdit }) => {
   return (
     <>
       <div className="wrapper">
@@ -158,6 +159,7 @@ const Datatable = ({ productsData, handleDelete,handleEdit,imgRef}) => {
                               <th>Action</th>
                             </tr>
                           </thead>
+                          
                           <tbody>
                             {productsData.map((item, idx) => {
                               return (

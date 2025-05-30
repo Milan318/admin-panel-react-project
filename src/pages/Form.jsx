@@ -3,7 +3,14 @@ import React from "react";
 import Side from "../components/Side";
 import Header from "../components/Header";
 
-const Form = ({ handleChange, product, godown ,handleSubmit,imgRef}) => {
+const Form = ({
+  handleChange,
+  product,
+  godown,
+  handleSubmit,
+  imgRef,
+  error,
+}) => {
   return (
     <>
       <div className="wrapper">
@@ -62,6 +69,11 @@ const Form = ({ handleChange, product, godown ,handleSubmit,imgRef}) => {
                                 id="product_name"
                                 placeholder="Enter product name"
                               />
+                              {error.product_name && (
+                                <span className="text-danger">
+                                  {error.product_name}
+                                </span>
+                              )}
                             </div>
                             <div className="form-group">
                               <label
@@ -79,6 +91,11 @@ const Form = ({ handleChange, product, godown ,handleSubmit,imgRef}) => {
                                 id="product_price"
                                 placeholder="Enter product price"
                               />
+                              {error.product_price && (
+                                <span className="text-danger">
+                                  {error.product_price}
+                                </span>
+                              )}
                             </div>
                             {/*Available stock*/}
                             <div className="form-group">
@@ -97,6 +114,11 @@ const Form = ({ handleChange, product, godown ,handleSubmit,imgRef}) => {
                                 id="product_stock"
                                 placeholder="Enter Stock available"
                               />
+                              {error.product_stock && (
+                                <span className="text-danger">
+                                  {error.product_stock}
+                                </span>
+                              )}
                             </div>
                             {/*Image */}
                             <div className="form-group">
@@ -108,13 +130,18 @@ const Form = ({ handleChange, product, godown ,handleSubmit,imgRef}) => {
                               </label>
                               <input
                                 type="file"
+                                ref={imgRef}
                                 name="file"
                                 onChange={handleChange}
                                 className="form-control"
                                 id="product_image"
-                                ref={imgRef}
                                 placeholder="Enter product image"
                               />
+                              {/* {error.file && (
+                                <span className="text-danger">
+                                  {error.file}
+                                </span>
+                              )} */}
                             </div>
                             {/*Godown */}
                             <div className="form-group">
@@ -176,6 +203,11 @@ const Form = ({ handleChange, product, godown ,handleSubmit,imgRef}) => {
                                   Bardoli
                                 </label>
                               </div>
+                              {error.godown && (
+                                <span className="text-danger">
+                                  {error.godown}
+                                </span>
+                              )}
                             </div>
 
                             <div className="form-group">
@@ -189,6 +221,11 @@ const Form = ({ handleChange, product, godown ,handleSubmit,imgRef}) => {
                                 className="form-control"
                                 id="description"
                               />
+                              {error.description && (
+                                <span className="text-danger">
+                                  {error.description}
+                                </span>
+                              )}
                             </div>
                           </div>
                         </div>
