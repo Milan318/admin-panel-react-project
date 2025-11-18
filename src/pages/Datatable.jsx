@@ -152,8 +152,7 @@ const Datatable = ({ productsData, handleDelete,handleEdit }) => {
                               <th>Sr No.</th>
                               <th>Product</th>
                               <th>Price</th>
-                              <th>Stock</th>
-                              <th>Product-Image</th>
+                              <th>Product Brand</th>
                               <th>Godown</th>
                               <th>Description</th>
                               <th>Action</th>
@@ -168,22 +167,6 @@ const Datatable = ({ productsData, handleDelete,handleEdit }) => {
                                   <td>{item.product_name}</td>
                                   <td>{item.product_price}</td>
                                   <td>{item.product_stock}</td>
-                                  <td>
-                                    <img
-                                      className="rounded"
-                                      src={item.product_image?.url || ""}
-                                      alt={
-                                        item.product_image?.name ||
-                                        "Product Image"
-                                      }
-                                      style={{
-                                        width: "70px",
-                                        height: "70px",
-                                        objectFit: "cover",
-                                      }}
-                                    />
-                                  </td>
-
                                   <td>
                                     {item.godown ? item.godown.toString() : []}
                                   </td>

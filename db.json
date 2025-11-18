@@ -1,0 +1,14 @@
+{"products": [
+    {
+      "id": 1,
+      "sku": "SKU123456",
+      "name": "Men's Cotton T-shirt",
+      "image": "url-to-image",
+      "price": 499,
+      "brand": "Roadster",
+      "description": "Comfortable and stylish",
+      "category": "menswear",
+      "rating": 4.2,
+      "inStock": true}
+  ]
+}

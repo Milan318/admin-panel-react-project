@@ -103,7 +103,7 @@ const Form = ({
                                 htmlFor="product_stock"
                                 className="fw-bold"
                               >
-                                Product Stock
+                                Product Brand Name
                               </label>
                               <input
                                 type="text"
@@ -112,36 +112,13 @@ const Form = ({
                                 value={product.product_stock || ""}
                                 className="form-control"
                                 id="product_stock"
-                                placeholder="Enter Stock available"
+                                placeholder="Enter product Brand"
                               />
                               {error.product_stock && (
                                 <span className="text-danger">
                                   {error.product_stock}
                                 </span>
                               )}
-                            </div>
-                            {/*Image */}
-                            <div className="form-group">
-                              <label
-                                htmlFor="product_Image"
-                                className="fw-bold"
-                              >
-                                Product Image :
-                              </label>
-                              <input
-                                type="file"
-                                ref={imgRef}
-                                name="file"
-                                onChange={handleChange}
-                                className="form-control"
-                                id="product_image"
-                                placeholder="Enter product image"
-                              />
-                              {/* {error.file && (
-                                <span className="text-danger">
-                                  {error.file}
-                                </span>
-                              )} */}
                             </div>
                             {/*Godown */}
                             <div className="form-group">
